@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "cursos")
-
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
@@ -17,7 +17,7 @@ public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "curso_id")
-    private long curso_id;
+    private int curso_id;
 
     @Column(name = "titulo")
     private String titulo;

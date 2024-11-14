@@ -12,12 +12,12 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Builder
 public class Inscripcion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "inscripcion_id")
-    private long inscripcion_id;
+    private int inscripcion_id;
 
     @ManyToOne
     @JoinColumn(name = "fk_id_usuario",referencedColumnName ="usuario_id", nullable = false)

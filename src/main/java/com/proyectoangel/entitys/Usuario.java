@@ -3,12 +3,13 @@ package com.proyectoangel.entitys;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 
 @Entity
 @Table(name="usuarios")
-
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
@@ -44,14 +45,5 @@ public class Usuario {
 
     @Column(name="telefono")
     private String telefono;
-
-    @Column(name="fecha_registro", nullable = false)
-    private LocalDateTime fecha_registro;
-
-    @Column(name = "estado", columnDefinition = "ENUM('activo', 'inactivo') DEFAULT 'activo'")
-    private String estado = "activo"; // Valor por defecto
-
-    @Column(name="rol",columnDefinition ="ENUM('usuario', 'administrador') DEFAULT 'usuario'")
-    private String rol="usuario"; // Valor por defecto
 
 }
