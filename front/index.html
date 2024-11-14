@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesorías Yenny Mejía</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Colores principales */
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #d37f43;
+            --accent-color: #2E2E2E;
+            --background-color: beige;
+            --text-color: #333;
+            --card-background: #f9f9f9;
+            --highlight-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: var(--highlight-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: var(--highlight-color);
+            border-radius: 5px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .info-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h2 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .info-card p {
+            margin-bottom: 10px;
+        }
+
+        .info-card i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        .auth-buttons {
+            text-align: center;
+            margin-top: 30px;
+            width: 100%; /* Full width to ensure buttons are aligned */
+        }
+
+        footer {
+            background-color: var(--accent-color);
+            color: var(--highlight-color);
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Asesorías Yenny Mejía</h1>
+    <p>Consultoría en salud para droguerías, consultorios odontológicos y más</p>
+</header>
+
+<nav>
+    <a href="#nosotros"><i class="fa fa-info-circle"></i> Nosotros</a>
+    <a href="#servicios"><i class="fa fa-cogs"></i> Servicios</a>
+    <a href="#contacto"><i class="fa fa-phone"></i> Contacto</a>
+</nav>
+
+<div class="container">
+    <!-- Sección Nosotros -->
+    <div class="info-card" id="nosotros">
+        <h2><i class="fa fa-building"></i> Sobre Nosotros</h2>
+        <p>En Asesorías Yenny Mejía, nos especializamos en brindar consultoría a empresas del ámbito de la salud, incluyendo droguerías, consultorios odontológicos y todo tipo de servicios relacionados con la salud.</p>
+    </div>
+
+    <!-- Sección Servicios -->
+    <div class="info-card" id="servicios">
+        <h2><i class="fa fa-cogs"></i> Servicios</h2>
+        <p>Ofrecemos servicios de asesoría en gestión de establecimientos de salud, implementación de normativas y buenas prácticas en droguerías y consultorios odontológicos.</p>
+    </div>
+
+    <!-- Sección Contacto -->
+    <div class="info-card" id="contacto">
+        <h2><i class="fa fa-phone"></i> Contacto</h2>
+        <p><i class="fa fa-envelope"></i> Email: <a href="mailto:yennymejia@outlook.com">yennymejia@outlook.com</a></p>
+        <p><i class="fa fa-phone"></i> Teléfono: +57 314 523 3577</p>
+    </div>
+
+
+    
+</div>
+<div class="container">
+    <div class="auth-buttons">
+        <a href="registro.html" class="btn">Ir al Registro</a>
+        <a href="index2.html" class="btn">Ir a la Tabla</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Asesorías Yenny Mejía - Todos los derechos reservados | <a href="#privacy">Política de privacidad</a></p>
+</footer>
+
+</body>
+</html>
